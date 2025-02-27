@@ -1,19 +1,37 @@
-<form action="mailto:foo@example.com" method="GET">
-    <label>
-      Email:
-      <input type="email" name="email">
-    </label>
-    <br>
-    <label>
-      Subject:
-      <input type="text" name="subject">
-    </label>
-    <br>
-    <label>
-      Message:
-      <textarea name="body"></textarea>
-    </label>
-    <br>
-    <button>Send</button>
-  </form>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="index.html" target="_blank">Contact</a>
+  <a href="../cv/index.html">CV</a> <!-- New CV link -->
+  <a href="../projects/index.html">Projects</a>
+</nav>
+<body>
+    <div class="container">
+        <form action="mailto:foo@example.com" method="GET" class="contact-form">
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+            <br>
+            <label>
+                Subject:
+                <input type="text" name="subject" required>
+            </label>
+            <br>
+            <label>
+                Message:
+                <textarea name="body" required></textarea>
+            </label>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
