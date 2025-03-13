@@ -121,3 +121,13 @@ img {
 h1 {
     font-size: 400%;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
